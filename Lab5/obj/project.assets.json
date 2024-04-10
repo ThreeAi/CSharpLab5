@@ -1,0 +1,547 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "LiveCharts/0.9.7": {
+        "type": "package",
+        "compile": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "LiveCharts.WinForms/0.9.7.1": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.9.7",
+          "LiveCharts.Wpf": "0.9.7"
+        },
+        "compile": {
+          "lib/net45/LiveCharts.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "LiveCharts.Wpf/0.9.7": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.9.7"
+        },
+        "compile": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Drawing.Common/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "ZedGraph/6.0.0-alpha0001": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/ZedGraph.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZedGraph.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ZedGraph.WinForms/6.0.0-alpha0001": {
+        "type": "package",
+        "dependencies": {
+          "ZedGraph": "6.0.0-alpha0001"
+        },
+        "compile": {
+          "lib/net46/ZedGraph.WinForms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/ZedGraph.WinForms.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net46/de/ZedGraph.WinForms.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net46/es/ZedGraph.WinForms.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net46/fr/ZedGraph.WinForms.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net46/hu/ZedGraph.WinForms.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net46/it/ZedGraph.WinForms.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net46/ja/ZedGraph.WinForms.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net46/pt/ZedGraph.WinForms.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net46/ru/ZedGraph.WinForms.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net46/sk/ZedGraph.WinForms.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/net46/sv/ZedGraph.WinForms.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net46/tr/ZedGraph.WinForms.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net46/zh-cn/ZedGraph.WinForms.resources.dll": {
+            "locale": "zh-cn"
+          },
+          "lib/net46/zh-tw/ZedGraph.WinForms.resources.dll": {
+            "locale": "zh-tw"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LiveCharts/0.9.7": {
+      "sha512": "p4xyBrUaNNfkWZSNsIle0r51cyVyFg0Yi0uBRZM5GQtdFiA/7guZHlffFyNUILIdux10Ch2hUaJpcZENVU9aaQ==",
+      "type": "package",
+      "path": "livecharts/0.9.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/LiveCharts.dll",
+        "lib/net40/LiveCharts.pdb",
+        "lib/net40/LiveCharts.xml",
+        "lib/net45/LiveCharts.dll",
+        "lib/net45/LiveCharts.pdb",
+        "lib/net45/LiveCharts.xml",
+        "lib/portable-net45+win8+wp8/LiveCharts.XML",
+        "lib/portable-net45+win8+wp8/LiveCharts.dll",
+        "lib/portable-net45+win8+wp8/LiveCharts.pdb",
+        "livecharts.0.9.7.nupkg.sha512",
+        "livecharts.nuspec",
+        "readme.txt"
+      ]
+    },
+    "LiveCharts.WinForms/0.9.7.1": {
+      "sha512": "eCBsVaxpUKHLpvlJEAhm+BQDWltnzc4VFhM4k4gJ+MsqyGQ/aq/AOWqTWx8OSJ0H52mDTJ1tQjErTYWeikLEOA==",
+      "type": "package",
+      "path": "livecharts.winforms/0.9.7.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/LiveCharts.WinForms.XML",
+        "lib/net40/LiveCharts.WinForms.dll",
+        "lib/net40/LiveCharts.WinForms.pdb",
+        "lib/net45/LiveCharts.WinForms.XML",
+        "lib/net45/LiveCharts.WinForms.dll",
+        "lib/net45/LiveCharts.WinForms.pdb",
+        "livecharts.winforms.0.9.7.1.nupkg.sha512",
+        "livecharts.winforms.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "LiveCharts.Wpf/0.9.7": {
+      "sha512": "lv6YZoK0B4yWykMq5b9grZXtIbTj+OWu4sVN9GDpdgV6zffu64m4d5CW8KSjfSl9rB8VU649x1NZvhoU67hCDg==",
+      "type": "package",
+      "path": "livecharts.wpf/0.9.7",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/LiveCharts.Wpf.XML",
+        "lib/net40/LiveCharts.Wpf.dll",
+        "lib/net40/LiveCharts.Wpf.pdb",
+        "lib/net45/LiveCharts.Wpf.XML",
+        "lib/net45/LiveCharts.Wpf.dll",
+        "lib/net45/LiveCharts.Wpf.pdb",
+        "livecharts.wpf.0.9.7.nupkg.sha512",
+        "livecharts.wpf.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/2.0.0": {
+      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "sha512": "LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "ref/net461/Microsoft.Win32.SystemEvents.dll",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Drawing.Common/4.5.0": {
+      "sha512": "AiJFxxVPdeITstiRS5aAu8+8Dpf5NawTMoapZ53Gfirml24p7HIfhjmCRxdXnmmf3IUA3AX3CcW7G73CjWxW/Q==",
+      "type": "package",
+      "path": "system.drawing.common/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "system.drawing.common.4.5.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "ZedGraph/6.0.0-alpha0001": {
+      "sha512": "SVcIiBJmc4UK/4Lz7/ZNuh6zXIdh1nAZHzVri0ScW5vAjnmbRKb6F/Ru/oFOntYyHNhYI+koMzrzFtuP8cyliw==",
+      "type": "package",
+      "path": "zedgraph/6.0.0-alpha0001",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "lib/net35/ZedGraph.dll",
+        "lib/net35/ZedGraph.xml",
+        "lib/net40/ZedGraph.dll",
+        "lib/net40/ZedGraph.xml",
+        "lib/net45/ZedGraph.dll",
+        "lib/net45/ZedGraph.xml",
+        "lib/net46/ZedGraph.dll",
+        "lib/net46/ZedGraph.xml",
+        "lib/net47/ZedGraph.dll",
+        "lib/net47/ZedGraph.xml",
+        "lib/netstandard2.0/ZedGraph.dll",
+        "lib/netstandard2.0/ZedGraph.xml",
+        "zedgraph.6.0.0-alpha0001.nupkg.sha512",
+        "zedgraph.nuspec"
+      ]
+    },
+    "ZedGraph.WinForms/6.0.0-alpha0001": {
+      "sha512": "hwXoAdb7xJZMlyEhJ8P8g6uT+w8y2m2X1FJyJEaY7xHRlFBUg20z8vVKqgdpy4Zx3JT2cg4dIXvk3YcA9PQKhQ==",
+      "type": "package",
+      "path": "zedgraph.winforms/6.0.0-alpha0001",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "lib/net35/ZedGraph.WinForms.dll",
+        "lib/net35/ZedGraph.WinForms.xml",
+        "lib/net35/de/ZedGraph.WinForms.resources.dll",
+        "lib/net35/es/ZedGraph.WinForms.resources.dll",
+        "lib/net35/fr/ZedGraph.WinForms.resources.dll",
+        "lib/net35/hu/ZedGraph.WinForms.resources.dll",
+        "lib/net35/it/ZedGraph.WinForms.resources.dll",
+        "lib/net35/ja/ZedGraph.WinForms.resources.dll",
+        "lib/net35/pt/ZedGraph.WinForms.resources.dll",
+        "lib/net35/ru/ZedGraph.WinForms.resources.dll",
+        "lib/net35/sk/ZedGraph.WinForms.resources.dll",
+        "lib/net35/sv/ZedGraph.WinForms.resources.dll",
+        "lib/net35/tr/ZedGraph.WinForms.resources.dll",
+        "lib/net35/zh-cn/ZedGraph.WinForms.resources.dll",
+        "lib/net35/zh-tw/ZedGraph.WinForms.resources.dll",
+        "lib/net40/ZedGraph.WinForms.dll",
+        "lib/net40/ZedGraph.WinForms.xml",
+        "lib/net40/de/ZedGraph.WinForms.resources.dll",
+        "lib/net40/es/ZedGraph.WinForms.resources.dll",
+        "lib/net40/fr/ZedGraph.WinForms.resources.dll",
+        "lib/net40/hu/ZedGraph.WinForms.resources.dll",
+        "lib/net40/it/ZedGraph.WinForms.resources.dll",
+        "lib/net40/ja/ZedGraph.WinForms.resources.dll",
+        "lib/net40/pt/ZedGraph.WinForms.resources.dll",
+        "lib/net40/ru/ZedGraph.WinForms.resources.dll",
+        "lib/net40/sk/ZedGraph.WinForms.resources.dll",
+        "lib/net40/sv/ZedGraph.WinForms.resources.dll",
+        "lib/net40/tr/ZedGraph.WinForms.resources.dll",
+        "lib/net40/zh-cn/ZedGraph.WinForms.resources.dll",
+        "lib/net40/zh-tw/ZedGraph.WinForms.resources.dll",
+        "lib/net45/ZedGraph.WinForms.dll",
+        "lib/net45/ZedGraph.WinForms.xml",
+        "lib/net45/de/ZedGraph.WinForms.resources.dll",
+        "lib/net45/es/ZedGraph.WinForms.resources.dll",
+        "lib/net45/fr/ZedGraph.WinForms.resources.dll",
+        "lib/net45/hu/ZedGraph.WinForms.resources.dll",
+        "lib/net45/it/ZedGraph.WinForms.resources.dll",
+        "lib/net45/ja/ZedGraph.WinForms.resources.dll",
+        "lib/net45/pt/ZedGraph.WinForms.resources.dll",
+        "lib/net45/ru/ZedGraph.WinForms.resources.dll",
+        "lib/net45/sk/ZedGraph.WinForms.resources.dll",
+        "lib/net45/sv/ZedGraph.WinForms.resources.dll",
+        "lib/net45/tr/ZedGraph.WinForms.resources.dll",
+        "lib/net45/zh-cn/ZedGraph.WinForms.resources.dll",
+        "lib/net45/zh-tw/ZedGraph.WinForms.resources.dll",
+        "lib/net46/ZedGraph.WinForms.dll",
+        "lib/net46/ZedGraph.WinForms.xml",
+        "lib/net46/de/ZedGraph.WinForms.resources.dll",
+        "lib/net46/es/ZedGraph.WinForms.resources.dll",
+        "lib/net46/fr/ZedGraph.WinForms.resources.dll",
+        "lib/net46/hu/ZedGraph.WinForms.resources.dll",
+        "lib/net46/it/ZedGraph.WinForms.resources.dll",
+        "lib/net46/ja/ZedGraph.WinForms.resources.dll",
+        "lib/net46/pt/ZedGraph.WinForms.resources.dll",
+        "lib/net46/ru/ZedGraph.WinForms.resources.dll",
+        "lib/net46/sk/ZedGraph.WinForms.resources.dll",
+        "lib/net46/sv/ZedGraph.WinForms.resources.dll",
+        "lib/net46/tr/ZedGraph.WinForms.resources.dll",
+        "lib/net46/zh-cn/ZedGraph.WinForms.resources.dll",
+        "lib/net46/zh-tw/ZedGraph.WinForms.resources.dll",
+        "lib/net47/ZedGraph.WinForms.dll",
+        "lib/net47/ZedGraph.WinForms.xml",
+        "lib/net47/de/ZedGraph.WinForms.resources.dll",
+        "lib/net47/es/ZedGraph.WinForms.resources.dll",
+        "lib/net47/fr/ZedGraph.WinForms.resources.dll",
+        "lib/net47/hu/ZedGraph.WinForms.resources.dll",
+        "lib/net47/it/ZedGraph.WinForms.resources.dll",
+        "lib/net47/ja/ZedGraph.WinForms.resources.dll",
+        "lib/net47/pt/ZedGraph.WinForms.resources.dll",
+        "lib/net47/ru/ZedGraph.WinForms.resources.dll",
+        "lib/net47/sk/ZedGraph.WinForms.resources.dll",
+        "lib/net47/sv/ZedGraph.WinForms.resources.dll",
+        "lib/net47/tr/ZedGraph.WinForms.resources.dll",
+        "lib/net47/zh-cn/ZedGraph.WinForms.resources.dll",
+        "lib/net47/zh-tw/ZedGraph.WinForms.resources.dll",
+        "zedgraph.winforms.6.0.0-alpha0001.nupkg.sha512",
+        "zedgraph.winforms.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "LiveCharts >= 0.9.7",
+      "LiveCharts.WinForms >= 0.9.7.1",
+      "ZedGraph.WinForms >= 6.0.0-alpha0001"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ThreeAi\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\ThreeAi\\Desktop\\C#лабы\\Lab5\\Lab5\\Lab5.csproj",
+      "projectName": "Lab5",
+      "projectPath": "C:\\Users\\ThreeAi\\Desktop\\C#лабы\\Lab5\\Lab5\\Lab5.csproj",
+      "packagesPath": "C:\\Users\\ThreeAi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ThreeAi\\Desktop\\C#лабы\\Lab5\\Lab5\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ThreeAi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "LiveCharts": {
+            "target": "Package",
+            "version": "[0.9.7, )"
+          },
+          "LiveCharts.WinForms": {
+            "target": "Package",
+            "version": "[0.9.7.1, )"
+          },
+          "ZedGraph.WinForms": {
+            "target": "Package",
+            "version": "[6.0.0-alpha0001, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"LiveCharts 0.9.7\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "LiveCharts",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"LiveCharts.WinForms 0.9.7.1\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "LiveCharts.WinForms",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"LiveCharts.Wpf 0.9.7\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "LiveCharts.Wpf",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"ZedGraph.WinForms 6.0.0-alpha0001\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net8.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "ZedGraph.WinForms",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Lab5/1.0.0": {
+        "dependencies": {
+          "LiveCharts": "0.9.7",
+          "LiveCharts.WinForms": "0.9.7.1",
+          "ZedGraph.WinForms": "6.0.0-alpha0001"
+        },
+        "runtime": {
+          "Lab5.dll": {}
+        }
+      },
+      "LiveCharts/0.9.7": {
+        "runtime": {
+          "lib/net45/LiveCharts.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
+          }
+        }
+      },
+      "LiveCharts.WinForms/0.9.7.1": {
+        "dependencies": {
+          "LiveCharts": "0.9.7",
+          "LiveCharts.Wpf": "0.9.7"
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.WinForms.dll": {
+            "assemblyVersion": "0.9.7.1",
+            "fileVersion": "0.9.7.1"
+          }
+        }
+      },
+      "LiveCharts.Wpf/0.9.7": {
+        "dependencies": {
+          "LiveCharts": "0.9.7"
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.0.0": {},
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        }
+      },
+      "System.Drawing.Common/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        }
+      },
+      "ZedGraph/6.0.0-alpha0001": {
+        "dependencies": {
+          "System.Drawing.Common": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZedGraph.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        }
+      },
+      "ZedGraph.WinForms/6.0.0-alpha0001": {
+        "dependencies": {
+          "ZedGraph": "6.0.0-alpha0001"
+        },
+        "runtime": {
+          "lib/net46/ZedGraph.WinForms.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        },
+        "resources": {
+          "lib/net46/de/ZedGraph.WinForms.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net46/es/ZedGraph.WinForms.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net46/fr/ZedGraph.WinForms.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net46/hu/ZedGraph.WinForms.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net46/it/ZedGraph.WinForms.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net46/ja/ZedGraph.WinForms.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net46/pt/ZedGraph.WinForms.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net46/ru/ZedGraph.WinForms.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net46/sk/ZedGraph.WinForms.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/net46/sv/ZedGraph.WinForms.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net46/tr/ZedGraph.WinForms.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net46/zh-cn/ZedGraph.WinForms.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net46/zh-tw/ZedGraph.WinForms.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lab5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LiveCharts/0.9.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p4xyBrUaNNfkWZSNsIle0r51cyVyFg0Yi0uBRZM5GQtdFiA/7guZHlffFyNUILIdux10Ch2hUaJpcZENVU9aaQ==",
+      "path": "livecharts/0.9.7",
+      "hashPath": "livecharts.0.9.7.nupkg.sha512"
+    },
+    "LiveCharts.WinForms/0.9.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eCBsVaxpUKHLpvlJEAhm+BQDWltnzc4VFhM4k4gJ+MsqyGQ/aq/AOWqTWx8OSJ0H52mDTJ1tQjErTYWeikLEOA==",
+      "path": "livecharts.winforms/0.9.7.1",
+      "hashPath": "livecharts.winforms.0.9.7.1.nupkg.sha512"
+    },
+    "LiveCharts.Wpf/0.9.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lv6YZoK0B4yWykMq5b9grZXtIbTj+OWu4sVN9GDpdgV6zffu64m4d5CW8KSjfSl9rB8VU649x1NZvhoU67hCDg==",
+      "path": "livecharts.wpf/0.9.7",
+      "hashPath": "livecharts.wpf.0.9.7.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "path": "microsoft.netcore.platforms/2.0.0",
+      "hashPath": "microsoft.netcore.platforms.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "hashPath": "microsoft.win32.systemevents.4.5.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AiJFxxVPdeITstiRS5aAu8+8Dpf5NawTMoapZ53Gfirml24p7HIfhjmCRxdXnmmf3IUA3AX3CcW7G73CjWxW/Q==",
+      "path": "system.drawing.common/4.5.0",
+      "hashPath": "system.drawing.common.4.5.0.nupkg.sha512"
+    },
+    "ZedGraph/6.0.0-alpha0001": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SVcIiBJmc4UK/4Lz7/ZNuh6zXIdh1nAZHzVri0ScW5vAjnmbRKb6F/Ru/oFOntYyHNhYI+koMzrzFtuP8cyliw==",
+      "path": "zedgraph/6.0.0-alpha0001",
+      "hashPath": "zedgraph.6.0.0-alpha0001.nupkg.sha512"
+    },
+    "ZedGraph.WinForms/6.0.0-alpha0001": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hwXoAdb7xJZMlyEhJ8P8g6uT+w8y2m2X1FJyJEaY7xHRlFBUg20z8vVKqgdpy4Zx3JT2cg4dIXvk3YcA9PQKhQ==",
+      "path": "zedgraph.winforms/6.0.0-alpha0001",
+      "hashPath": "zedgraph.winforms.6.0.0-alpha0001.nupkg.sha512"
+    }
+  }
+}
